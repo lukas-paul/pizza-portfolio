@@ -17,7 +17,7 @@
 <main>
 	
 	<div class="headline">
-		<h2>La Pizzaria Grande</h2>
+		<h2>La Pizzeria Grande</h2>
 	</div>
 	
 	<div class="middle">

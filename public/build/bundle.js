@@ -774,7 +774,7 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Send";
     			add_location(p, file$6, 21, 4, 506);
-    			attr_dev(textarea, "class", "comment-box svelte-qk4dxz");
+    			attr_dev(textarea, "class", "comment-box svelte-1qxfb9n");
     			attr_dev(textarea, "maxlength", "200");
     			attr_dev(textarea, "placeholder", "your review");
     			attr_dev(textarea, "type", "text");
@@ -782,10 +782,10 @@ var app = (function () {
     			attr_dev(input, "maxlength", "200");
     			attr_dev(input, "placeholder", "your name");
     			attr_dev(input, "type", "text");
-    			attr_dev(input, "class", "svelte-qk4dxz");
+    			attr_dev(input, "class", "svelte-1qxfb9n");
     			add_location(input, file$6, 23, 4, 674);
     			add_location(button, file$6, 24, 4, 793);
-    			attr_dev(div, "class", "message svelte-qk4dxz");
+    			attr_dev(div, "class", "message svelte-1qxfb9n");
     			add_location(div, file$6, 20, 0, 463);
     		},
     		l: function claim(nodes) {
@@ -1918,7 +1918,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (116:0) {#if loggedIn}
+    // (116:0) {#if !loggedIn}
     function create_if_block_1$1(ctx) {
     	let login;
     	let current;
@@ -1952,14 +1952,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(116:0) {#if loggedIn}",
+    		source: "(116:0) {#if !loggedIn}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:1) {#if !loggedIn}
+    // (119:1) {#if loggedIn}
     function create_if_block$1(ctx) {
     	let main;
     	let h20;
@@ -2122,56 +2122,56 @@ var app = (function () {
     			t29 = space();
     			button2 = element("button");
     			button2.textContent = "Save Changes";
-    			add_location(h20, file$1, 122, 4, 3707);
+    			add_location(h20, file$1, 120, 4, 3698);
     			attr_dev(img0, "class", "reload-icon svelte-oq7i5");
     			if (!src_url_equal(img0.src, img0_src_value = "reload.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "");
-    			add_location(img0, file$1, 124, 8, 3758);
-    			add_location(h21, file$1, 125, 8, 3838);
+    			add_location(img0, file$1, 122, 8, 3749);
+    			add_location(h21, file$1, 123, 8, 3829);
     			attr_dev(div0, "class", "review-list svelte-oq7i5");
-    			add_location(div0, file$1, 126, 8, 3875);
-    			add_location(h22, file$1, 139, 8, 4400);
+    			add_location(div0, file$1, 124, 8, 3866);
+    			add_location(h22, file$1, 137, 8, 4391);
     			attr_dev(div1, "class", "review-list svelte-oq7i5");
-    			add_location(div1, file$1, 140, 8, 4435);
+    			add_location(div1, file$1, 138, 8, 4426);
     			attr_dev(button0, "class", "select-reviews");
-    			add_location(button0, file$1, 153, 4, 4957);
+    			add_location(button0, file$1, 151, 4, 4948);
     			attr_dev(div2, "class", "reviews svelte-oq7i5");
-    			add_location(div2, file$1, 123, 4, 3728);
-    			add_location(h23, file$1, 155, 5, 5053);
-    			add_location(h30, file$1, 159, 8, 5129);
+    			add_location(div2, file$1, 121, 4, 3719);
+    			add_location(h23, file$1, 153, 5, 5044);
+    			add_location(h30, file$1, 157, 8, 5120);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "placeholder", "Name");
-    			add_location(input0, file$1, 160, 8, 5155);
+    			add_location(input0, file$1, 158, 8, 5146);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "placeholder", "Ingredients");
-    			add_location(input1, file$1, 161, 8, 5250);
+    			add_location(input1, file$1, 159, 8, 5241);
     			attr_dev(input2, "type", "number");
     			attr_dev(input2, "placeholder", "Price");
-    			add_location(input2, file$1, 162, 8, 5359);
+    			add_location(input2, file$1, 160, 8, 5350);
     			attr_dev(input3, "class", "checkbox");
     			attr_dev(input3, "type", "checkbox");
     			attr_dev(input3, "id", "checkbox-id");
-    			add_location(input3, file$1, 163, 8, 5458);
+    			add_location(input3, file$1, 161, 8, 5449);
     			attr_dev(label, "for", "checkbox-id");
-    			add_location(label, file$1, 164, 8, 5524);
-    			add_location(button1, file$1, 165, 8, 5575);
+    			add_location(label, file$1, 162, 8, 5515);
+    			add_location(button1, file$1, 163, 8, 5566);
     			attr_dev(div3, "class", "new-item svelte-oq7i5");
-    			add_location(div3, file$1, 158, 4, 5098);
+    			add_location(div3, file$1, 156, 4, 5089);
     			attr_dev(img1, "class", "reload-icon svelte-oq7i5");
     			if (!src_url_equal(img1.src, img1_src_value = "reload.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "");
-    			add_location(img1, file$1, 169, 8, 5688);
-    			add_location(h31, file$1, 171, 16, 5816);
+    			add_location(img1, file$1, 167, 8, 5679);
+    			add_location(h31, file$1, 169, 16, 5807);
     			attr_dev(div4, "class", "review-list svelte-oq7i5");
-    			add_location(div4, file$1, 170, 12, 5774);
-    			add_location(h32, file$1, 186, 16, 6457);
+    			add_location(div4, file$1, 168, 12, 5765);
+    			add_location(h32, file$1, 184, 16, 6448);
     			attr_dev(div5, "class", "review-list svelte-oq7i5");
-    			add_location(div5, file$1, 185, 12, 6415);
-    			add_location(button2, file$1, 200, 8, 7045);
+    			add_location(div5, file$1, 183, 12, 6406);
+    			add_location(button2, file$1, 198, 8, 7036);
     			attr_dev(div6, "class", "menu-selection svelte-oq7i5");
-    			add_location(div6, file$1, 168, 4, 5651);
+    			add_location(div6, file$1, 166, 4, 5642);
     			attr_dev(div7, "class", "Menu");
-    			add_location(div7, file$1, 156, 4, 5071);
+    			add_location(div7, file$1, 154, 4, 5062);
     			attr_dev(main, "class", "svelte-oq7i5");
     			add_location(main, file$1, 119, 0, 3687);
     		},
@@ -2370,14 +2370,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(119:1) {#if !loggedIn}",
+    		source: "(119:1) {#if loggedIn}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (128:12) {#each notSelectedReviews as review}
+    // (126:12) {#each notSelectedReviews as review}
     function create_each_block_3(ctx) {
     	let div2;
     	let div0;
@@ -2408,18 +2408,18 @@ var app = (function () {
     			input = element("input");
     			t4 = space();
     			attr_dev(p0, "class", "title-text svelte-oq7i5");
-    			add_location(p0, file$1, 130, 24, 4059);
-    			add_location(p1, file$1, 131, 24, 4127);
+    			add_location(p0, file$1, 128, 24, 4050);
+    			add_location(p1, file$1, 129, 24, 4118);
     			attr_dev(div0, "class", "review-text svelte-oq7i5");
-    			add_location(div0, file$1, 129, 21, 4009);
+    			add_location(div0, file$1, 127, 21, 4000);
     			attr_dev(input, "class", "checkbox svelte-oq7i5");
     			attr_dev(input, "type", "checkbox");
     			input.value = input_value_value = /*review*/ ctx[20].id;
-    			add_location(input, file$1, 134, 24, 4250);
+    			add_location(input, file$1, 132, 24, 4241);
     			attr_dev(div1, "class", "review-select svelte-oq7i5");
-    			add_location(div1, file$1, 133, 20, 4198);
+    			add_location(div1, file$1, 131, 20, 4189);
     			attr_dev(div2, "class", "review svelte-oq7i5");
-    			add_location(div2, file$1, 128, 17, 3967);
+    			add_location(div2, file$1, 126, 17, 3958);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -2451,14 +2451,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(128:12) {#each notSelectedReviews as review}",
+    		source: "(126:12) {#each notSelectedReviews as review}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (142:12) {#each selectedReviews as review}
+    // (140:12) {#each selectedReviews as review}
     function create_each_block_2(ctx) {
     	let div2;
     	let div0;
@@ -2489,18 +2489,18 @@ var app = (function () {
     			input = element("input");
     			t4 = space();
     			attr_dev(p0, "class", "title-text svelte-oq7i5");
-    			add_location(p0, file$1, 144, 24, 4616);
-    			add_location(p1, file$1, 145, 24, 4684);
+    			add_location(p0, file$1, 142, 24, 4607);
+    			add_location(p1, file$1, 143, 24, 4675);
     			attr_dev(div0, "class", "review-text svelte-oq7i5");
-    			add_location(div0, file$1, 143, 21, 4566);
+    			add_location(div0, file$1, 141, 21, 4557);
     			attr_dev(input, "class", "checkbox svelte-oq7i5");
     			attr_dev(input, "type", "checkbox");
     			input.value = input_value_value = /*review*/ ctx[20].id;
-    			add_location(input, file$1, 148, 24, 4807);
+    			add_location(input, file$1, 146, 24, 4798);
     			attr_dev(div1, "class", "review-select svelte-oq7i5");
-    			add_location(div1, file$1, 147, 20, 4755);
+    			add_location(div1, file$1, 145, 20, 4746);
     			attr_dev(div2, "class", "review svelte-oq7i5");
-    			add_location(div2, file$1, 142, 17, 4524);
+    			add_location(div2, file$1, 140, 17, 4515);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -2532,14 +2532,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(142:12) {#each selectedReviews as review}",
+    		source: "(140:12) {#each selectedReviews as review}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (173:16) {#each selectedMenuItems as item}
+    // (171:16) {#each selectedMenuItems as item}
     function create_each_block_1(ctx) {
     	let div2;
     	let div0;
@@ -2577,20 +2577,20 @@ var app = (function () {
     			input = element("input");
     			t6 = space();
     			attr_dev(p0, "class", "title-text svelte-oq7i5");
-    			add_location(p0, file$1, 175, 24, 6001);
-    			add_location(p1, file$1, 176, 24, 6063);
-    			add_location(p2, file$1, 177, 24, 6113);
+    			add_location(p0, file$1, 173, 24, 5992);
+    			add_location(p1, file$1, 174, 24, 6054);
+    			add_location(p2, file$1, 175, 24, 6104);
     			attr_dev(div0, "class", "item-text svelte-oq7i5");
-    			add_location(div0, file$1, 174, 21, 5953);
+    			add_location(div0, file$1, 172, 21, 5944);
     			attr_dev(input, "class", "checkbox_menu svelte-oq7i5");
     			attr_dev(input, "type", "checkbox");
     			input.value = input_value_value = /*item*/ ctx[15].id;
     			input.checked = "true";
-    			add_location(input, file$1, 180, 24, 6233);
+    			add_location(input, file$1, 178, 24, 6224);
     			attr_dev(div1, "class", "review-select svelte-oq7i5");
-    			add_location(div1, file$1, 179, 20, 6181);
+    			add_location(div1, file$1, 177, 20, 6172);
     			attr_dev(div2, "class", "item svelte-oq7i5");
-    			add_location(div2, file$1, 173, 17, 5913);
+    			add_location(div2, file$1, 171, 17, 5904);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -2626,14 +2626,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(173:16) {#each selectedMenuItems as item}",
+    		source: "(171:16) {#each selectedMenuItems as item}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (188:16) {#each notSelectedMenuItems as item}
+    // (186:16) {#each notSelectedMenuItems as item}
     function create_each_block(ctx) {
     	let div2;
     	let div0;
@@ -2671,19 +2671,19 @@ var app = (function () {
     			input = element("input");
     			t6 = space();
     			attr_dev(p0, "class", "title-text svelte-oq7i5");
-    			add_location(p0, file$1, 190, 24, 6647);
-    			add_location(p1, file$1, 191, 24, 6709);
-    			add_location(p2, file$1, 192, 24, 6759);
+    			add_location(p0, file$1, 188, 24, 6638);
+    			add_location(p1, file$1, 189, 24, 6700);
+    			add_location(p2, file$1, 190, 24, 6750);
     			attr_dev(div0, "class", "item-text svelte-oq7i5");
-    			add_location(div0, file$1, 189, 21, 6599);
+    			add_location(div0, file$1, 187, 21, 6590);
     			attr_dev(input, "class", "checkbox_menu svelte-oq7i5");
     			attr_dev(input, "type", "checkbox");
     			input.value = input_value_value = /*item*/ ctx[15].id;
-    			add_location(input, file$1, 195, 24, 6879);
+    			add_location(input, file$1, 193, 24, 6870);
     			attr_dev(div1, "class", "review-select svelte-oq7i5");
-    			add_location(div1, file$1, 194, 20, 6827);
+    			add_location(div1, file$1, 192, 20, 6818);
     			attr_dev(div2, "class", "item svelte-oq7i5");
-    			add_location(div2, file$1, 188, 17, 6559);
+    			add_location(div2, file$1, 186, 17, 6550);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -2719,7 +2719,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(188:16) {#each notSelectedMenuItems as item}",
+    		source: "(186:16) {#each notSelectedMenuItems as item}",
     		ctx
     	});
 
@@ -2730,8 +2730,8 @@ var app = (function () {
     	let t;
     	let if_block1_anchor;
     	let current;
-    	let if_block0 = /*loggedIn*/ ctx[0] && create_if_block_1$1(ctx);
-    	let if_block1 = !/*loggedIn*/ ctx[0] && create_if_block$1(ctx);
+    	let if_block0 = !/*loggedIn*/ ctx[0] && create_if_block_1$1(ctx);
+    	let if_block1 = /*loggedIn*/ ctx[0] && create_if_block$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -2751,7 +2751,7 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (/*loggedIn*/ ctx[0]) {
+    			if (!/*loggedIn*/ ctx[0]) {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
 
@@ -2774,7 +2774,7 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if (!/*loggedIn*/ ctx[0]) {
+    			if (/*loggedIn*/ ctx[0]) {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
@@ -3220,7 +3220,7 @@ var app = (function () {
     			main = element("main");
     			div0 = element("div");
     			h2 = element("h2");
-    			h2.textContent = "La Pizzaria Grande";
+    			h2.textContent = "La Pizzeria Grande";
     			t1 = space();
     			div2 = element("div");
     			div1 = element("div");

@@ -113,13 +113,11 @@
     }
 
 </script>
-{#if loggedIn}
+{#if !loggedIn}
     <Login on:login-success={setLogginIn}/>
     {/if}
- {#if !loggedIn}
+ {#if loggedIn}
 <main>
-    
-   
     <h2>Reviews</h2>
     <div class="reviews">
         <img class="reload-icon" src="reload.png" alt="" on:click={getReviews}>

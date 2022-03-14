@@ -40,6 +40,7 @@ const sendReview = () => {
     }
 
     textarea, input {
+        
         font-family: monospace;
         width: 90%;
     }
