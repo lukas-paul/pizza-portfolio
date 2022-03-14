@@ -1,6 +1,6 @@
 <script>
 
-import { slide, fade } from 'svelte/transition';
+import { fade } from 'svelte/transition';
 import Message from "../components/Message.svelte"
 import Menu from "../components/Menu.svelte"
 import Location from "../components/Location.svelte"
@@ -57,7 +57,6 @@ const toggleMessage = () => {
     </div> 
     <p class="open-review" on:click={toggleMessage}>
         Leave a review
-        
     </p>
      {#if message}
 		    <Message on:close-message={toggleMessage}/>
@@ -86,7 +85,6 @@ const toggleMessage = () => {
         left: 50%;
         transform: translateX(-50%);
         margin: 20px;
-
     }
 
     .location-section {
@@ -129,5 +127,12 @@ const toggleMessage = () => {
 
     h2, p {
         font-size: 20px;
+    }
+
+    .location-section {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        margin: 20px;
     }
 </style>

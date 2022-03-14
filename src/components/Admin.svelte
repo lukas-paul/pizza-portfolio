@@ -4,7 +4,8 @@
 
     let selectedReviews = [];
     let notSelectedReviews = [];
-    fetch("/reviews").then((results)=> {
+    const getReviews = () => {
+        fetch("/reviews").then((results)=> {
         console.log("review results: ", results)
         return results.json()
     }).then((results)=> {
@@ -23,9 +24,14 @@
             console.log("not selected Reviews: ", notSelectedReviews);
         })
     })
+    }
+    getReviews()
+    
 
     let selectedMenuItems = [];
     let notSelectedMenuItems = [];
+
+    const getMenuItems = () => {
     fetch("/menu-items").then((results)=> {
         console.log(results)
         return results.json()
@@ -44,6 +50,8 @@
             console.log("not selected Reviews: ", notSelectedReviews);
         })
     })
+    }
+    getMenuItems();
 
     const selectReviews = () => {
         let inputElements = document.getElementsByClassName('checkbox');
@@ -105,15 +113,16 @@
     }
 
 </script>
-{#if !loggedIn}
+{#if loggedIn}
     <Login on:login-success={setLogginIn}/>
     {/if}
- {#if loggedIn}
+ {#if !loggedIn}
 <main>
     
    
     <h2>Reviews</h2>
     <div class="reviews">
+        <img class="reload-icon" src="reload.png" alt="" on:click={getReviews}>
         <h2>Unpublished Reviews</h2>
         <div class="review-list">
             {#each notSelectedReviews as review}
@@ -129,7 +138,7 @@
         {/each}
         </div>
         <h2>Published Reviews</h2>
-        <div>
+        <div class="review-list">
             {#each selectedReviews as review}
                  <div class="review">
                      <div class="review-text">
@@ -158,6 +167,7 @@
     </div>
 
     <div class="menu-selection">
+        <img class="reload-icon" src="reload.png" alt="" on:click={getMenuItems}>
             <div class="review-list">
                 <h3>Published Menu Items</h3>
                 {#each selectedMenuItems as item}
@@ -200,9 +210,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #C0CAD3;
     }
 
     .reviews, .menu-selection, .new-item {
+        position: relative;
         width: 80vw;
         font-family: Arial, Helvetica, sans-serif;
         background-color: white;
@@ -241,6 +253,15 @@
 
     .title-text {
         font-weight: bold;
+    }
+
+    .reload-icon {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
     }
 
 </style>

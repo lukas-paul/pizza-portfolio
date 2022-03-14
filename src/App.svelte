@@ -1,13 +1,8 @@
 <script>
-	import Location from "./components/Location.svelte"
 	import AboutUs from "./components/AboutUs.svelte"
 	import Admin from "./components/Admin.svelte"
-	import Menu from "./components/Menu.svelte"
  	import url from "./url"
 	import { slide } from 'svelte/transition';
-
-	let animation = true
-	$: animation = animation
 
 	let admin = false;
 	if ($url.hash === "#/admin") {
@@ -26,13 +21,9 @@
 	</div>
 	
 	<div class="middle">
-		{#if $url.hash === "#/aboutus"}
 		<div transition:slide={{duration: 1000}}>
 			<AboutUs />
-			
 		</div>
-		{/if}
-		
 	</div>
 
 	<div class="impressum">
@@ -40,7 +31,11 @@
 			<p style="font-weight: bold">Opening Hours</p>
 			<p>Monday — Sunday: 6pm — 11pm</p>
 		</div>
-		<div class="contact"></div>
+		<div class="contact">
+			<a href="https://www.facebook.com/gazzopizza/"><img src="facebook.png" alt="facebook"></a>
+			<a href="https://www.instagram.com/gazzopizza/?hl=en"><img src="instagram.png" alt="instagram"></a>
+		</div>
+			
 	</div>
 
 </main>
@@ -54,11 +49,20 @@ main {
 }
 
 .headline {
+	position: relative;
 	grid-row: 1;
 	width: 100vw;
 	text-align: center;
 	background-color: black;
 	color: white;
+}
+
+.headline>h2 {
+	margin: 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .middle {
@@ -79,22 +83,45 @@ main {
 	background-color: rgba(0, 0, 0, 0.9);
 	font-family: monospace;
 	color: white;
-}
-
-.nav {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.opening-hours {
+	height: 80%;
+	margin-left: 10px;
+}
+
+.contact {
+	height: 80%;
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	justify-content: space-around;
-	width: 30%;
-	height: 30px;
-	right: 10px;
-	position: absolute;
+}
+.contact>a>img {
+	height: 30px;;
 }
 
 @media (max-width: 500px) {
 	main {
 		display: grid;
-		grid-template-rows: 20vh 60vh 10vh;
+		grid-template-rows: 20vh 60vh 20vh;
+	}
+
+	.impressum {
+		flex-direction: column;
+		align-items: baseline;
+		
+	}
+
+	.contact {
+		margin-left: 10px;
+		justify-content: flex-start;
+		gap: 20px;;
 	}
 }
 
