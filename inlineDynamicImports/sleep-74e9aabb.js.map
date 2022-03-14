@@ -1,0 +1,1 @@
+{"version":3,"file":"sleep-74e9aabb.js","sources":["../node_modules/svelte-typewriter/src/helpers/sleep.js"],"sourcesContent":["/** @type {import(types').Sleep} */\nconst sleep = ms => new Promise(resolve => setTimeout(resolve, ms))\n\nexport { sleep }\n"],"names":[],"mappings":";;AAAA;AACK,MAAC,KAAK,GAAG,EAAE,IAAI,IAAI,OAAO,CAAC,OAAO,IAAI,UAAU,CAAC,OAAO,EAAE,EAAE,CAAC;;;;"}
